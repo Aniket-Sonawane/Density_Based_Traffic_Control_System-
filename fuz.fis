@@ -1,0 +1,54 @@
+[System]
+Name='fuz'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[0 100]
+NumMFs=3
+MF1='low':'trimf',[-40 0 40]
+MF2='medium':'trimf',[10 50 90]
+MF3='high':'trimf',[60 100 140]
+
+[Input2]
+Name='input2'
+Range=[0 100]
+NumMFs=3
+MF1='low':'trimf',[-40.4 -0.423 39.4291754756871]
+MF2='medium':'trimf',[10 50 90]
+MF3='high':'trimf',[60 100 140]
+
+[Input3]
+Name='input3'
+Range=[0 100]
+NumMFs=3
+MF1='low':'trimf',[-40 0 40]
+MF2='medium':'trimf',[10 50 90]
+MF3='high':'trimf',[60 100 140]
+
+[Input4]
+Name='input4'
+Range=[0 100]
+NumMFs=3
+MF1='low':'trimf',[-40 0 40]
+MF2='medum':'trimf',[10 50 90]
+MF3='high':'trimf',[60 100 140]
+
+[Output1]
+Name='output1'
+Range=[0 100]
+NumMFs=3
+MF1='low':'trimf',[-40 0 40]
+MF2='medium':'trimf',[10 50 90]
+MF3='high':'trimf',[60.8 99.2 163.2]
+
+[Rules]
